@@ -31,6 +31,14 @@ p a {
 	color: red;
 }
 
+img {
+	width: 100%;
+	padding-top: 20px;
+}
+
+.featured-image h2 {
+	width: 100%;
+}
 
 // D R Y
 
@@ -38,7 +46,13 @@ p a {
 	margin: auto;
 }
 
-header h1 span {
+header h1 span, .featured-image h2 span, .postTitle span, .viewAll span{
 	background: red;
 	padding: 6px 12px;
+	font-family: 'Gentium Book Basic', serif;
+
+}
+
+.postTitle {
+	text-align: center;
 }

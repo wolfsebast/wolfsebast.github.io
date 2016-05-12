@@ -1,3 +1,27 @@
 ---
 layout: default
 ---
+
+
+{% for post in site.posts limit:3 %}
+  <a href="{{ post.url }}">
+<div class="featured-image">
+	{{ post.excerpt }}
+		<h2><span> {{ post.title }} </span></h2>
+</div>
+ </a>
+{% endfor %}
+
+<a class="viewAll" href="blog.html"> <span>View All</span></a>
+
+
+<ul class="tags">
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
+    <li>
+      <a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }}
+        <span>({{ site.tags[this_word].size }})</span>
+      </a>
+    </li>
+  {% endunless %}{% endfor %}
+</ul>
