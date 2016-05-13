@@ -1,0 +1,11 @@
+---
+layout: page
+---
+{% for post in site.posts  %}
+  <a href="{{ post.url }}">
+<div class="featured-image">
+	{{ post.excerpt }}
+		<h2><span> {{ post.title }} </span></h2>
+</div>
+ </a>
+{% endfor %}

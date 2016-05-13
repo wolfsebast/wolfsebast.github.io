@@ -56,7 +56,8 @@ nav ul li {
   width: auto; }
 
 nav ul li a {
-  padding-right: 20px; }
+  padding-right: 20px;
+  font-family: 'Gentium Book Basic', serif; }
 
 header p {
   line-height: 30px;
